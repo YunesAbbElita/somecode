@@ -90,7 +90,7 @@ class Player(object):
           self.rect.top = enemy.rect.bottom
           speed_y = 0
 
-# Clase muro
+# Clase wall
 class Wall(object):
   def __init__(self, pos):
     walls.append(self) # guarda en la lista un muro 
