@@ -32,7 +32,7 @@ fi
 
 echo "[`date -u`] [INFO] Starting to transform input file" >> $LOG 
 #Eliminamos caracteres con cosas raras
-sed -i 'y/āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜĀÁǍÀĒÉĚÈĪÍǏÌŌÓǑÒŪÚǓÙǕǗǙǛñÑ/aaaaeeeeiiiioooouuuuuuuuAAAAEEEEIIIIOOOOUUUUUUUUnÑ/' $file
+sed -i 'y/āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜĀÁǍÀĒÉĚÈĪÍǏÌŌÓǑÒŪÚǓÙǕǗǙǛñÑ/aaaaeeeeiiiioooouuuuuuuuAAAAEEEEIIIIOOOOUUUUUUUUnN/' $file
 
 #Eliminamos el espacio que se genera en caso de no tener segundo apellido
 sed -i 's/ ,/,/g' $file
